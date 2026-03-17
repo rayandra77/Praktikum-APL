@@ -135,7 +135,7 @@ void tambahPokemon(Pokemon dataPokemon[], int &jumlahPokemon){
 }
 
 void lihatPokemon(Pokemon dataPokemon[], int jumlahPokemon){
-    cout<<"\n================ DATA POKEMON ================\n";
+    cout<<"======================== DATA POKEMON ========================\n";
 
     if(jumlahPokemon==0){
         cout<<"Belum ada data.\n";
@@ -187,7 +187,7 @@ void updatePokemon(Pokemon dataPokemon[], int jumlahPokemon){
 
     lihatPokemon(dataPokemon,jumlahPokemon);
 
-    cout<<"Masukkan ID Pokemon : ";
+    cout<<"Masukkan ID Pokemon yang ingin diubah : ";
     cin>>id;
     cin.ignore();
 
@@ -233,7 +233,7 @@ void hapusPokemon(Pokemon dataPokemon[], int &jumlahPokemon){
 
     lihatPokemon(dataPokemon,jumlahPokemon);
 
-    cout<<"Masukkan ID Pokemon : ";
+    cout<<"Masukkan ID Pokemon yang ingin dihapus : ";
     cin>>id;
 
     for(int i=0;i<jumlahPokemon;i++){
